@@ -19,3 +19,9 @@
 
 # Go workspace file
 go.work
+/config.yml~
+/config/config.go~
+/config/config_test.go~
+/go.mod~
+/i3weatherblock
+/i3weatherblock.go~

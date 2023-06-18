@@ -1,0 +1,15 @@
+location:
+  latitude: 41.26
+  longitude: -81.86
+block:
+  template: |-
+    {{.Forecast.Temperature}}°F {{.Forecast.ShortForecast}} {{.Forecast.ProbabilityOfPrecipitation.Value}}% <span foreground="red">{{.Alert.Properties.Event}}</span>
+alertPopup:
+  template: |-
+    {{.Alert.Properties.Event}}
+  timeToShow: 30
+detailPopup:
+  template: |-
+    {{.Alert.Properties.Description}}
+  timeToShow: 30
+
